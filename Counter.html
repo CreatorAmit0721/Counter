@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTER-APP</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            
+            /* margin: 20px; */
+            height: 100%;
+            background-color: rgb(33, 134, 221);
+        }
+        .counter{
+          /* background-color: rgb(216, 175, 99); */
+          margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+        .container{
+            background-color: rgb(49, 233, 7);
+            padding: 90px 110px;
+            border-radius: 2rem;
+        }
+        #count{
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        button{
+            padding: 12px 15px;
+            /* display: flex; */
+            /* justify-content: space-around; */
+            /* gap: 2rem; */
+            margin: 20px;
+            background-color: brown;
+            border-radius: 2rem;
+            cursor: pointer;
+            border: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="counter">
+    <div class="container">
+    <h2 id="count">0</h2>
+    <button id="inc">+</button>
+    <button id="dic">-</button>
+    <button id="reset">RESET</button>
+    </div>
+    </div>
+
+
+    <script>
+        let count = 0;
+
+        let incEl = document.getElementById("count");
+        let inc = document.getElementById("inc");
+        let dic = document.getElementById("dic");
+        let reset = document.getElementById("reset");
+
+        inc.addEventListener("click", function (){
+          count++;
+          incEl.innerText = count;
+        });
+
+        dic.addEventListener("click", function (){
+          count--;
+          incEl.innerText = count;
+        });
+
+        reset.addEventListener("click", function (){
+            count = 0;
+            incEl.innerText = count;
+        })
+    </script>
+</body>
+</html>
