@@ -1,85 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COUNTER-APP</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            
-            /* margin: 20px; */
-            height: 100%;
-            background-color: rgb(33, 134, 221);
-        }
-        .counter{
-          /* background-color: rgb(216, 175, 99); */
-          margin-top: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 80vh;
-        }
-        .container{
-            background-color: rgb(49, 233, 7);
-            padding: 90px 110px;
-            border-radius: 2rem;
-        }
-        #count{
-            text-align: center;
-            font-size: 3rem;
-            margin-bottom: 2rem;
-        }
-        button{
-            padding: 12px 15px;
-            /* display: flex; */
-            /* justify-content: space-around; */
-            /* gap: 2rem; */
-            margin: 20px;
-            background-color: brown;
-            border-radius: 2rem;
-            cursor: pointer;
-            border: none;
-            
-        }
-    </style>
-</head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Data Deletion Instructions - Salon Booking Assistant</title>
+<style>body{font-family:Arial,sans-serif;max-width:760px;margin:30px auto;padding:0 16px;line-height:1.6;color:#222}h1{font-size:26px}</style></head>
 <body>
-    <div class="counter">
-    <div class="container">
-    <h2 id="count">0</h2>
-    <button id="inc">+</button>
-    <button id="dic">-</button>
-    <button id="reset">RESET</button>
-    </div>
-    </div>
-
-
-    <script>
-        let count = 0;
-
-        let incEl = document.getElementById("count");
-        let inc = document.getElementById("inc");
-        let dic = document.getElementById("dic");
-        let reset = document.getElementById("reset");
-
-        inc.addEventListener("click", function (){
-          count++;
-          incEl.innerText = count;
-        });
-
-        dic.addEventListener("click", function (){
-          count--;
-          incEl.innerText = count;
-        });
-
-        reset.addEventListener("click", function (){
-            count = 0;
-            incEl.innerText = count;
-        })
-    </script>
-</body>
-</html>
+<h1>Data Deletion Instructions</h1>
+<p>To delete the data we hold about you (name, phone number, messages and appointment records):</p>
+<ol><li>Send an email to <b>amitkumar131407@gmail.com</b> with the subject "Delete my data".</li><li>Include the phone number or account you used to message the salon.</li><li>We will delete your data within 7 days and confirm by reply.</li></ol>
+<p>You can also message the salon and write "delete my data" and we will process your request.</p>
+<p><a href="privacy.html">Privacy Policy</a></p>
+</body></html>
